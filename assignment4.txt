@@ -1,0 +1,16 @@
+1. How can you concatenate strings in C?
+	You need to remove the \0 from the end of one string, and add the characters from the second string to it. You can also use the strcat () function.
+
+2. If a static array is not initialized, what will the size automatically be set to?
+	It automatically initializes to 0, and there is an error.
+
+3. How would you declare a multidimensional array of size 64? Explain your answer. 
+	We would declare it a datatype arrayName[dim1size] [dim2size], underneath of which you write the ints. This is to get results from each array. 	
+4. In your own words, explain what each of the following functions does and returns:
+	a. strcmp(): this function compares two strings. It returns if one string is less than another, or if they are equal.
+
+	b. fgets(): this function reads a line from a stream, and stores it in a string. It stops when n-1 characters are read, the newline character is read, or it reaches the end of the program. If the program is successful, it returns the same first-string parameter. If not, it returns a null pointer. If it reaches the end of the file without reading anything, the contents of the first string do not change. Basically, it can be used as a scanf for strings.
+
+	c. strcat(): this function adds a specified string to the end of another specifiedstring. It returns a pointer to the resulting string.
+
+	d. strlen(): this function computest the length of a string, not including the null pointer. It returns the length of the string.
